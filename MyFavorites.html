@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Web Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+header {
+	background-color: #5a0505; 
+	padding: 20px;
+	text-align: center;
+}
+section {
+	margin: 0;
+	overflow: hidden;
+}
+nav {
+	background-color: #fffffe; 
+	height: 500px; 
+	width: 300px; 
+	float: left;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 10px;
+	margin-bottom: 5px;
+	background-color: #5a0505;
+}
+article {
+	background-color: #EEEEEE; 
+	padding: 20px;
+	background-image: url('bg.avif');
+	background-size: cover;
+	background-position: center;
+}
+footer {
+	background-color: #5a0505; 
+	clear: both;
+	text-align: center;
+	padding: 25px;
+}
+article h1 {
+	padding-top: 10px;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+article blockquote {
+	padding-top: 10px;	
+	text-align: center;
+	width: 75%;
+	padding-left: 90px;
+	justify-content: center;
+}
+article h2 {
+	padding-top: 20px;
+	text-align: center;	
+}
+.favdiv {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr); /* 2 columns */
+	grid-template-rows: repeat(2, auto); /* 5 rows */
+	grid-gap: 20px;
+	padding-bottom: 40px;
+}
+.favdesign {
+	background-color: rgba(103, 102, 100, 0.3);
+	height: 150px;
+	width: 150px;
+	text-align: center;
+	border: 2px solid #f3f4f5;
+	border-radius: 5%;
+	color: #000000;
+	margin: auto;
+}
+article div {
+	margin-left: 50px;
+}
+p a {
+	color: white;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1200px) {
+  article {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  nav a {
+    background-color: #fffffe;
+    color: black;
+  }
+  article {
+    width: 100%;
+  }
+  .favdiv {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .favdiv {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    width: 100%;
+    padding-left: 0;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+	<h1>Benedict Ian R. Te Jr.</h1>
+</header>
+<section>
+<nav>
+	<p><a href="Aboutme.html">About Me</a></p>
+	<p><a href="Subjecttaken.html">Subject Taken</a></p>
+	<p><a href="SubjectEnroll.html">Subject Currently Enrolled</a></p>
+	<p><a href="ContactMe.html">Contact Me</a></p>
+	<p><a href="MyFavorites.html">My Favorites</a></p>
+	<p><a href="Gallery.html">Gallery</a></p>
+</nav>
+<article>
+	<h1>MY FAVORITES</h1>
+	<div class="favdiv">
+	<div class="favdesign">
+	<p><strong>Playing Online Games</strong> <br><br>-I like to play Mobile Legend and Call of Duty: Mobile.</p>
+	</div>	
+	<div class="favdesign">
+	<p><strong>Playing Sports</strong> <br><br>-I like to play Basketball and Volleyball.</p>
+	</div>	
+	<div class="favdesign">
+		<p><strong>Watching Movies</strong> <br><br>-I like to Watch Anime and Disney Movies.</p>
+	</div>
+	<div class="favdesign">
+		<p><strong>Travel</strong> <br><br>-I like to Travel with my Family.</p>
+	</div>
+	<div class="favdesign">
+		<p><strong>Swimming</strong> <br><br>-I like to Swim in the night.</p>
+	</div>
+	<div class="favdesign">
+		<p><strong>Dancing</strong> <br><br>-I like to dance inside in my room.</p>
+	</div>
+	<div class="favdesign">
+		<p><strong>Singing</strong> <br><br>-I like to sing in my bathroom.</p>
+	</div>
+	<div class="favdesign">
+		<p><strong>Drawing</strong> <br><br>-I like to draw an Anime character.</p>
+	</div>
+	<div class="favdesign">
+		<p><strong>Painting</strong> <br><br>-I like to paint sunset.</p>
+	</div>
+	<div class="favdesign">
+		<p><strong>Photography</strong> <br><br>-I like to take a picture of the Sunset and Sunrise.</p>
+	</div>
+	</div>
+</article>
+<footer>
+	<p> © 2023-2024 IPT4 | All Rights Reserved</p>
+</footer>
+</section>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Web Page</title>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+header {
+	background-color: #5a0505; 
+	width: auto;
+	padding: 20px;
+}
+section {
+	width: auto; 
+	margin: 0;
+	overflow: hidden; /* Clear floats */
+}
+nav {
+	background-color: #fffffe; 
+	height: 500px; 
+	width: 300px; 
+	float: left;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 10px;
+	margin-bottom: 5px;
+	background-color: #5a0505;
+}
+article {
+	background-color: #EEEEEE; 
+	height: 500px; 
+	width: 78%; /* Full width */
+	float: left;	
+	padding: 20px;
+	text-align: center; /* Center align the content */
+	background-image: url('bg.avif');
+	background-size: cover; /* Adjust the background image size */
+	background-position: center; /* Center the background image */
+}
+footer {
+	background-color: #5a0505; 
+	clear: both;
+	text-align: center;
+	padding: 25px;
+}
+article h1 {
+	font-size: 30px;
+	text-align: center; /* Center the heading */
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+article img {
+	display: block;
+	margin: 0 auto; /* Center the image */
+	height: 200px;
+	width: 200px;
+	border-color: white;
+	border: 2px solid;
+}
+article blockquote {
+	text-align: center; /* Center the blockquote */
+	width: 100%; /* Full width */
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+article a {
+  text-decoration: none;
+  background-color: none;
+}
+
+p a{
+	color: white;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+	nav {
+		width: 100%; /* Change nav width to full width */
+		float: none; /* Remove float for nav */
+	}
+	nav a {
+		width: 100%; /* Adjust nav links to full width */
+	}
+}
+</style>
+</head>
+<body>
+<header>
+	<h1>Benedict Ian R. Te Jr.</h1>
+</header>
+<section>
+<nav>
+	<p><a href="Aboutme.html">About Me</a></p>
+	<p><a href="Subjecttaken.html">Subject Taken</a></p>
+	<p><a href="SubjectEnroll.html">Subject Currently Enrolled</a></p>
+	<p><a href="ContactMe.html">Contact Me</a></p>
+	<p><a href="MyFavorites.html">My Favorites</a></p>
+	<p><a href="Gallery.html">Gallery</a></p>
+</nav>
+<article>
+<h1>Contact Me</h1>
+
+<img src="te.jpg" alt="Profile Picture">
+<blockquote>
+      <p><a>Number: +639054914738</a></p>
+			<p><a href="https://web.facebook.com/ian.te.796" >FB: Benedict Ian</a></p>
+      <p><a href="#">Email: Benedictiantejr29@gmail.com</a></p>
+</blockquote>
+</article>
+<footer>
+	<p> © 2023-2024 IPT4 | All Rights Reserved</p>
+</footer>
+</section>
+</body>
+</html>

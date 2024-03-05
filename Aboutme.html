@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Web Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+header {
+	background-color: #5a0505; 
+	padding: 20px;
+	text-align: center;
+}
+section {
+	margin: 0;
+	overflow: hidden; /* Clear floats */
+}
+footer {
+	background-color: #5a0505; 
+	clear: both;
+	text-align: center;
+	padding: 25px;
+}
+nav {
+	background-color: #fffffe; 
+	width: 300px; 
+	float: left;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 10px;
+	margin-bottom: 5px;
+	background-color: #5a0505;
+}
+article {
+	background-image: url('bg.avif');
+	background-size: cover; /* Adjust the background image size */
+	background-position: center; /* Center the background image */
+	padding: 20px;
+	overflow: hidden; /* Clear floats */
+}
+article img {
+	float: left;
+	margin-right: 20px;
+	width: 250px;
+	height: 250px;
+	border-color: white;
+	border: 2px solid;
+}
+article blockquote {
+	margin-bottom: 20px;
+	text-align: left;
+	width: calc(100% - 270px); /* Adjust width to fit beside the image */
+	background-color: rgba(255, 255, 255, 0.5); /* Add a semi-transparent background color */
+}
+article p {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+	nav {
+		float: none;
+		width: auto;
+	}
+	article img {
+		float: none;
+		margin-right: 0;
+		margin-bottom: 20px;
+		width: 100%;
+		height: auto;
+	}
+}
+
+p a{
+	color: white;
+}
+</style>
+</head>
+<body>
+<header>
+	<h1>Benedict Ian R. Te Jr.</h1>
+</header>
+<section>
+<nav>
+	<p><a href="Aboutme.html">About Me</a></p>
+	<p><a href="Subjecttaken.html">Subject Taken</a></p>
+	<p><a href="SubjectEnroll.html">Subject Currently Enrolled</a></p>
+	<p><a href="ContactMe.html">Contact Me</a></p>
+	<p><a href="MyFavorites.html">My Favorites</a></p>
+	<p><a href="Gallery.html">Gallery</a></p>
+</nav>
+<article>
+	<img src="te.jpg">
+	<blockquote>
+		<p>Last name: Te</p>
+		<p>First name: Benedict Ian Jr.</p>
+		<p>Middle name: Ramayla</p>
+		<p>Age: 20</p>
+		<p>Address: P-6, Dimaluna, Ozamiz City</p>
+		<p>Birthdate: December 29, 2003</p>
+		<p>Gender: Male</p>
+	</blockquote>
+</article>
+</section>
+<footer>
+	<p> © 2023-2024 IPT4 | All Rights Reserved</p>
+</footer>
+</body>
+</html>

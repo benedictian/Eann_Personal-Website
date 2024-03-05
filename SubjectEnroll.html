@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Web Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+header {
+	background-color: #5a0505; 
+	padding: 20px;
+	text-align: center;
+}
+section {
+	margin: 0;
+	overflow: hidden; /* Clear floats */
+}
+footer {
+	background-color: #5a0505; 
+	clear: both;
+	text-align: center;
+	padding: 25px;
+}
+nav {
+	background-color: #fffffe; 
+	width: 300px; 
+	float: left;
+}
+nav a {
+	text-decoration: none;
+	color: rgb(254, 248, 248);
+	display: block;
+	padding: 10px;
+	margin-bottom: 5px;
+	background-color: #5a0505;
+}
+article {
+	background-color: #EEEEEE; 
+	padding: 20px;
+	overflow: hidden; /* Clear floats */
+	background-image: url('bg.avif');
+	background-size: cover; /* Adjust the background image size */
+	background-position: center; /* Center the background image */
+}
+article h1 {
+	text-align: center;
+	margin-top: 20px;
+}
+table {
+	border-collapse: collapse;
+	width: 80%;
+	margin: 10px auto; /* Center the table */
+}
+th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid rgb(250, 250, 250);
+}
+tr:first-child th {
+	border-top: 1px solid rgb(255, 255, 255);
+}
+tfoot {
+	font-weight: bold;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+	nav {
+		float: none;
+		width: auto;
+	}
+	article {
+		width: 100%;
+	}
+	table {
+		width: 100%;
+	}
+}
+
+p a{
+	color: white;
+}
+</style>
+</head>
+<body>
+<header>
+	<h1>Benedict Ian R. Te Jr.</h1>
+</header>
+<section>
+<nav>
+	<p><a href="Aboutme.html">About Me</a></p>
+	<p><a href="Subjecttaken.html">Subject Taken</a></p>
+	<p><a href="SubjectEnroll.html">Subject Currently Enrolled</a></p>
+	<p><a href="ContactMe.html">Contact Me</a></p>
+	<p><a href="MyFavorites.html">My Favorites</a></p>
+	<p><a href="Gallery.html">Gallery</a></p>
+</nav>
+<article>
+	<h1>Subject Currently Enrolled</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Section</th>
+				<th>Subject</th>
+				<th>Units</th>
+				<th>Time</th>
+				<th>Day</th>
+				<th>Room</th>
+				<th>CycleNo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>CSIT503</td>
+				<td>CSIT 5</td>
+				<td>3.0</td>
+				<td>08300930A <br> 02350405</td>
+				<td>TTH <br> TTH</td>
+				<td>HF305 <br> HF304</td>
+				<td>0</td>
+			</tr> 
+			<tr>
+				<td>ITP403</td>
+				<td>ITP 4</td>
+				<td>3.0</td>
+				<td>11101210N <br> 01000230P</td>
+				<td>MW <br> TTH</td>
+				<td>HF307 <br> HF204</td>
+				<td>0</td>       
+			</tr>
+			<tr>
+				<td>ITP503</td>
+				<td>ITP 5</td>
+				<td>3.0</td>
+				<td>09351035A<br>08000930A</td>
+				<td>MW <br> MW</td>
+				<td>HF307 <br> HF204</td>
+				<td>0</td>       
+			</tr>
+			<tr>
+				<td>ITP603</td>
+				<td>ITP6 </td>
+				<td>3.0</td>
+				<td>04100510P<br>11101240N</td>
+				<td>MW <br> TTH</td>
+				<td>HF305 <br> HF204</td>
+				<td>0</td>        
+			</tr>
+			<tr>
+				<td>PE435CS</td>
+				<td>PE 4</td>
+				<td>2.0</td>
+				<td>08001000A</td>
+				<td>FRI</td>
+				<td>CCRT</td>
+				<td>0</td>       
+			</tr>
+			<tr>
+				<td>COM125CS</td>
+				<td>COM 1</td>
+				<td>3.0</td>
+				<td>11100210P</td>
+				<td>FRI</td>
+				<td>FH304</td>
+				<td>0</td>     
+			</tr>
+			<tr>
+				<td>PH128CS</td>
+				<td>PHILO</td>
+				<td>3.0</td>
+				<td>05450715PP</td>
+				<td>TTH</td>
+				<td>RC406</td>
+				<td>0</td>   
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="2">Total Units</td>
+				<td colspan="6">20</td>
+			</tr>
+		</tfoot>
+	</table>
+</article>
+<footer>
+	<p> © 2023-2024 IPT4 | All Rights Reserved</p>
+</footer>
+</section>
+</body>
+</html>

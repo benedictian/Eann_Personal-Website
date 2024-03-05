@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Web Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+header {
+	background-color: #5a0505; 
+	padding: 20px;
+	text-align: center;
+}
+section {
+	margin: 0;
+	overflow: hidden; /* Clear floats */
+}
+nav {
+	background-color: #fffffe; 
+	width: 300px; 
+	float: left;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 10px;
+	margin-bottom: 5px;
+	background-color: #5a0505;
+}
+article {
+	min-height: 80vh;
+	background-color: #EEEEEE; 
+	width: calc(100% - 320px); /* Adjust width to accommodate navigation */
+	float: left;	
+	padding: 20px;
+	text-align: center; /* Center-align the content inside article */
+	background-image: url('bg.avif');
+	background-size: cover; /* Adjust the background image size */
+	background-position: center; /* Center the background image */
+}
+footer {
+	background-color: #5a0505; 
+	clear: both;
+	text-align: center;
+	padding: 25px;
+}
+article table {
+	width: 100%; /* Make table width responsive */
+	border-collapse: collapse;
+	margin: 0 auto; /* Center the table */
+}
+article table th, td{
+	border: 1px solid;
+	padding: 10px;
+	width: 33.33%; /* Equal width for table columns */
+}
+article h1 {
+	padding-top: 20px;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+}
+tbody tr:nth-child(even) {
+	background-color: rgba(95, 5, 5, 0.563);
+}
+tbody tr:nth-child(odd) {
+	background-color: rgba(95, 5, 5, 0.563);
+}
+p a{
+	color: white;
+}
+.pagination {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.pagination ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+.pagination li {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.pagination li a {
+	display: block;
+	text-decoration: none;
+	padding: 5px 10px;
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+.pagination li a:hover {
+	opacity: .8;
+	color: white;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+	nav {
+		float: none;
+		width: auto;
+	}
+	article {
+		width: calc(100% - 20px); /* Adjust width for smaller screens */
+	}
+	article table th, td{
+		width: 100%; /* Make table columns span full width on smaller screens */
+	}
+}
+</style>
+</head>
+<body>
+<header>
+	<h1>Benedict Ian R. Te Jr.</h1>
+</header>
+<section>
+<nav>
+	<p><a href="Aboutme.html">About Me</a></p>
+	<p><a href="Subjecttaken.html">Subject Taken</a></p>
+	<p><a href="SubjectEnroll.html">Subject Currently Enrolled</a></p>
+	<p><a href="ContactMe.html">Contact Me</a></p>
+	<p><a href="MyFavorites.html">My Favorites</a></p>
+	<p><a href="Gallery.html">Gallery</a></p>
+</nav>
+<article>
+	<h1>Subject Taken</h1>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="3">Second Year - First Semester</th>
+			</tr>
+			<tr>
+				<th style="background-color: #a91111a5" >Subjects</th>	
+				<th style="background-color: #a91111a5" >Description</th>
+				<th style="background-color: #a91111a5" >Units</th>		
+			</tr>
+		</thead>	
+		<tbody>
+			<tr>
+				<td>CSIT-4</td>
+				<td>DATA STRUCTURES AND ALGORITHMS</td>
+				<td>3.0</td>
+			</tr>
+			<tr>
+				<td>ITP 3</td>
+				<td>NETWORKING 1</td>
+				<td>3.0</td>
+			</tr>
+			<tr>
+				<td>ITEL 1A</td>
+				<td>IT ELECTIVE 1: PLATFORM TECHNOLOGIES</td>
+				<td>3.0</td>
+			</tr>
+			<tr>
+				<td>ITEL 2A</td>
+				<td>IT ELECTIVE 2: OBJECTIVE-ORIENTED PROGRAMMING</td>
+				<td>3.0</td>
+			</tr>
+			<tr>
+				<td>PE 3</td>
+				<td>Sports</td>
+				<td>2.0</td>
+			</tr>
+			<tr>
+				<td>SOC ECON 1</td>
+				<td>THE CONTEMPORARY WORLD</td>
+				<td>3.0</td>
+			</tr>
+			<tr>
+				<td>HIST 1</td>
+				<td>READING IN PHILIPPINES HISTORY</td>
+				<td>3.0</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="pagination">
+		<ul>
+			<li><a href="Subjecttaken1st2.html">&lt;</a></li>
+			<li><a href="Subjecttaken.html">1</a></li>
+			<li><a href="Subjecttaken1st2.html">2</a></li>
+			<li><a href="Subjecttaken21st.html">3</a></li>
+		</ul>
+	</div>
+
+</article>
+
+
+<footer>
+	<p> © 2023-2024 IPT4 | All Rights Reserved</p>
+</footer>
+</section>
+</body>
+</html>
